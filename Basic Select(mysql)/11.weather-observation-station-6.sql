@@ -1,0 +1,11 @@
+/*
+Enter your query here.
+SELECT DISTINCT(CITY) 
+FROM STATION
+WHERE (LCASE(CITY) LIKE 'a%' or LCASE(CITY) LIKE 'e%' or LCASE(CITY) LIKE 'i%' or LCASE(CITY) LIKE 'o%' or LCASE(CITY) LIKE 'u%')
+;
+*/
+SELECT DISTINCT(CITY) 
+FROM STATION
+WHERE LCASE(SUBSTR(CITY,1,1)) IN ('a','e','i','o','u') 
+;

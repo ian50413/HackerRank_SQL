@@ -1,0 +1,5 @@
+SELECT DISTINCT(CITY)
+FROM STATION
+WHERE LCASE(SUBSTR(CITY,1,1)) IN ('a','e','i','o','u')
+AND LCASE(SUBSTR(CITY,LENGTH(CITY),1)) IN ('a','e','i','o','u')
+;
