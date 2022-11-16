@@ -8,3 +8,9 @@ GROUP BY s.HACKER_ID, h.NAME
 HAVING COUNT(s.SUBMISSION_ID) > 1
 ORDER BY COUNT(s.SUBMISSION_ID) DESC, 1
 ;
+/*
+The HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate functions.
+(WHERE ...)
+GROUP BY ...
+HAVING...
+*/
